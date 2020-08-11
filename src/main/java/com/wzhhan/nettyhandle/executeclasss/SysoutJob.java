@@ -1,9 +1,9 @@
-package com.wzhhan.distriquartz.executeclasss;
+package com.wzhhan.nettyhandle.executeclasss;
 
 import com.alibaba.fastjson.JSON;
-import com.wzhhan.distriquartz.bean.JobConfig;
-import com.wzhhan.distriquartz.config.QuartzManager;
-import com.wzhhan.distriquartz.util.DateUtil;
+import com.wzhhan.nettyhandle.bean.JobConfig;
+import com.wzhhan.nettyhandle.config.QuartzManager;
+import com.wzhhan.nettyhandle.util.DateUtil;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * @author:monsterHan

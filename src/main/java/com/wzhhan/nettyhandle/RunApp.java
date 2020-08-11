@@ -1,13 +1,10 @@
-package com.wzhhan.distriquartz;
+package com.wzhhan.nettyhandle;
 
-import com.wzhhan.distriquartz.bean.JobConfig;
-import com.wzhhan.distriquartz.config.QuartzManager;
+import com.wzhhan.nettyhandle.config.QuartzManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.UUID;
 
 /**
  * @author:monsterHan

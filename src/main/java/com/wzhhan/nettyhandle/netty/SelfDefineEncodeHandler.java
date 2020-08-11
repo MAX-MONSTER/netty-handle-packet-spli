@@ -1,4 +1,4 @@
-package com.wzhhan.distriquartz.netty;
+package com.wzhhan.nettyhandle.netty;
 
 import io.netty.handler.codec.ByteToMessageDecoder;
 import io.netty.buffer.ByteBuf;

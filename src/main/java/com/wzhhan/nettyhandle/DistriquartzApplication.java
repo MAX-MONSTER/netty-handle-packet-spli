@@ -1,4 +1,4 @@
-package com.wzhhan.distriquartz;
+package com.wzhhan.nettyhandle;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.wzhhan.distriquartz.netty;
+package com.wzhhan.nettyhandle.netty;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

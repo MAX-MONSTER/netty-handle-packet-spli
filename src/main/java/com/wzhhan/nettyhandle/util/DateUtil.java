@@ -1,4 +1,4 @@
-package com.wzhhan.distriquartz.util;
+package com.wzhhan.nettyhandle.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

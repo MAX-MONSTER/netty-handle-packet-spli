@@ -1,7 +1,6 @@
-package com.wzhhan.distriquartz.config;
+package com.wzhhan.nettyhandle.config;
 
-import com.wzhhan.distriquartz.bean.JobConfig;
-import com.wzhhan.distriquartz.executeclasss.SysoutJob;
+import com.wzhhan.nettyhandle.bean.JobConfig;
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

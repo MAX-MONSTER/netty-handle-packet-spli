@@ -1,4 +1,4 @@
-package com.wzhhan.distriquartz.bean;
+package com.wzhhan.nettyhandle.bean;
 
 import java.util.HashMap;
 import java.util.Map;
