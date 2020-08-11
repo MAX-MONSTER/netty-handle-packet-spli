@@ -19,17 +19,17 @@ public class SocketClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
 
-        UnpooledByteBufAllocator allocator = new UnpooledByteBufAllocator(false);
-        ByteBuf buffer = allocator.buffer(20);
-        buffer.writeInt(1604);
-        buffer.writeBytes("head".getBytes());
-        String longMsgBody = "";
-        for (int i = 0; i < 400; i++) {
-            longMsgBody = longMsgBody + "body";
-        }
-        buffer.writeBytes(longMsgBody.getBytes());
-
-        ctx.writeAndFlush(buffer);
+//        UnpooledByteBufAllocator allocator = new UnpooledByteBufAllocator(false);
+//        ByteBuf buffer = allocator.buffer(20);
+//        buffer.writeInt(1604);
+//        buffer.writeBytes("head".getBytes());
+//        String longMsgBody = "";
+//        for (int i = 0; i < 400; i++) {
+//            longMsgBody = longMsgBody + "body";
+//        }
+//        buffer.writeBytes(longMsgBody.getBytes());
+//
+//        ctx.writeAndFlush(buffer);
 
 //        for (int i = 0; i < 20; i++) {
 //            UnpooledByteBufAllocator allocator = new UnpooledByteBufAllocator(false);
@@ -41,15 +41,15 @@ public class SocketClientHandler extends ChannelInboundHandlerAdapter {
 //            ctx.writeAndFlush(buffer);
 //        }
 //        Thread.sleep(20000);
-//        for (int i = 0; i < 10; i++) {
-//            UnpooledByteBufAllocator allocator = new UnpooledByteBufAllocator(false);
-//            ByteBuf buffer = allocator.buffer(20);
-//            buffer.writeInt(8);
-//            buffer.writeBytes("head".getBytes());
-//            buffer.writeBytes("body".getBytes());
-//
-//            ctx.writeAndFlush(buffer);
-//        }
+        for (int i = 0; i < 10; i++) {
+            UnpooledByteBufAllocator allocator = new UnpooledByteBufAllocator(false);
+            ByteBuf buffer = allocator.buffer(20);
+            buffer.writeInt(8);
+            buffer.writeBytes(("hea"+i).getBytes());
+            buffer.writeBytes(("bod"+i).getBytes());
+
+            ctx.writeAndFlush(buffer);
+        }
 
     }
 }
