@@ -28,6 +28,7 @@ public class BusinessServerHandler extends ChannelInboundHandlerAdapter {
         String bodyString = new String(body);
         assert  "body".equals(bodyString);
         System.out.println("body:"+bodyString);
+        buf.release();
     }
 }
 
