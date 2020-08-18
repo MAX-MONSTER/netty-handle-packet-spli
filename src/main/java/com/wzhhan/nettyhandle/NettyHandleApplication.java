@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DistriquartzApplication {
+public class NettyHandleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DistriquartzApplication.class, args);
+        SpringApplication.run(NettyHandleApplication.class, args);
     }
 
 }
